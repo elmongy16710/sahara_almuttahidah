@@ -1,0 +1,113 @@
+/*******************************************************************
+********************* Variables ****************************************
+********************************************************************/
+:root {
+    // Fonts Size
+    --fontSizeHeading: 32px;
+    --fontSizeBig: 25px;
+    --fontSizeMedium: 20px;
+    --fontSizeRegular: 16px;
+    --fontSizeSmall : 14px;
+    --fontSizeVerySmall : 12px;
+    --fontSize18 : 18px;
+    --fontSize24 : 24px ;
+
+
+    // Colors
+    --mainColor: #08477D;
+    --secondColor: #FFB635;
+    --primaryColor: #D8D8D8;
+    --primaryColor2: #F4FAFF ;
+    --primaryColor3 : #B7DEFF ;
+
+    --primaryColor4 : #FFF5E3 ;
+    --primaryColor5 : #FFC662 ;
+
+    --whiteColor: #fff;
+    --blackColor: #000;
+
+    // Fonts Name
+    --fontFamilyBold :  "TajawalBold" ;
+    --fontFamilyRegular : "TajawalRegular";
+    --fontFamilyMedium : "TajawalMedium";
+
+    // Spacing
+    --veryBigSpace : 70px;
+    --bigSpace : 50px;
+    --mediumSpace : 35px;
+    --regularSpace : 25px;
+    --smallSpace : 15px;
+    --verySmallSpace : 10px;
+    --space20 : 20px;
+    --space30 : 30px;
+
+    // Directions
+    --rtlDirection : rtl ;
+    --ltrDirection : ltr ;
+    --textRight : right ;
+    --textLeft : left ;
+}
+
+// Sass Variables to use in sass functions
+$secondColor: #FFB635;
+$mainColor : #08477D ;
+$whiteColor : #fff ;
+
+
+/*******************************************************************
+********************* Import Fonts ****************************************
+********************************************************************/
+
+
+// Tajawal Bold
+@font-face {
+    font-family: "TajawalBold";
+    src : url('../webfonts/Tajawal/Tajawal-Bold.ttf');
+
+}
+
+// Tajawal Regular
+@font-face {
+    font-family: "TajawalRegular";
+    src : url('../webfonts/Tajawal/Tajawal-Regular.ttf');
+
+}
+
+// Tajawal Medium
+@font-face {
+    font-family: "TajawalMedium";
+    src : url('../webfonts/Tajawal/Tajawal-Medium.ttf');
+}
+
+// Cairo Font (if the (Tajawal Font No't Working))
+@font-face {
+    font-family: "CairoRegular";
+    src : url('../webfonts/Cairo/static/Cairo-Regular.ttf');
+}
+
+
+// Center Element
+@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // @include flex();
+}
+
+// Overlay
+@mixin overlay {
+    width: 100%;
+    height: 100px;
+    background-color: rgba($mainColor , .9);
+}
+
+
+@mixin customBox {
+    gap: var(--regularSpace);
+    @include flex();
+    flex-direction: column;
+    background-color: var(--mainColor);
+    border: 1px solid var(--secondColor);
+    padding: var(--regularSpace);
+}
+

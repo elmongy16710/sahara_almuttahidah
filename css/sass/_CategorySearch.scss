@@ -1,0 +1,111 @@
+.category-filter {
+    padding: var(--bigSpace) 0;
+    padding-bottom: 0;
+    position: relative;
+
+    .swiper-category {
+        padding-bottom : var(--bigSpace)
+    }
+
+
+    &::after {
+        background-image: url("../images/categoryIcons/left.svg");
+        background-position: top left;
+        top: 0;
+        left: 0;
+      
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+      
+        background-size: 70%;
+        width: 25%;
+        height: 100%;
+    }
+
+    .floating_btn {
+        
+        
+        
+    }
+
+
+}
+
+.swiper-category {
+
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: var(--secondColor);
+        &.swiper-pagination-bullet-active {
+
+        }
+    }
+
+    .swiper-slide-active {
+        .category-item {
+            background-color: var(--primaryColor4);
+            border-color: var(--primaryColor5);
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+    }
+}
+
+
+  .floating_btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    z-index: 999;
+    &.active_fixed {
+      position: fixed;
+      right : 15px;
+      top: 15px;
+    }
+
+  }
+  
+  @keyframes pulsing {
+    to {
+      box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+    }
+  }
+  
+  .contact_icon {
+
+    background-color: var(--whiteColor);
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    font-size:30px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translatey(0px);
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 0 0 #42db87;
+    -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    font-weight: normal;
+    font-family: sans-serif;
+    text-decoration: none !important;
+    transition: all 300ms ease-in-out;
+    svg , i {
+        color: #42db87;;
+    }
+  }
+  
+  

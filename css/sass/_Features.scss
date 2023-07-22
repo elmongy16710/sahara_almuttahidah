@@ -1,0 +1,42 @@
+.features {
+    padding: var(--veryBigSpace) 0;
+    background-color: var(--mainColor);
+    position: relative;
+
+
+    &::after , &::before {
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        width : 25% ;
+        background-size: cover;
+        height: 80%;
+
+
+
+    }
+    &::before {
+        background-image: url("../../images/featuresIcons/features_topRight.svg");
+        background-position: right top;
+        right: 0;
+        top: 0;
+    }
+
+    &::after {
+        background-image: url("../images/featuresIcons/features_BottomLeft.svg");
+        background-position: left bottom;
+        bottom: 0;
+        left: 0;
+    }
+
+
+
+    .custom-heading {
+        .custom-head {
+            color: var(--whiteColor);
+        }
+        .custom-desc-div {
+            color: var(--whiteColor);
+        }
+    }
+}

@@ -1,0 +1,166 @@
+@media(min-width : 1199px) {
+
+
+
+
+}
+
+@media(min-width : 992px) {
+
+    .header-content-up {
+        width: 60% !important;
+        height: calc(100% - 59px);
+    }
+
+    .text-l-sm {
+        text-align: left;
+    }
+
+}
+
+@media(max-width : 991px) {
+    .custom-accordion {
+        
+        .accordion-head {
+            align-items: flex-start;
+        }
+    }
+}
+
+
+
+@media(max-width : 767px) {
+    :root {}
+
+    .navbar-brand {
+        img {
+            width: 100%
+        }
+    }
+
+    .floating_btn  {
+        width: 80px;
+        height: 80px;
+        right: 10px;
+    }
+    .contact_icon {
+        width: 80px;
+        height: 80px;
+        img {
+            width: 60%;
+        }
+    }
+
+    .category-filter::after {
+        width: 45%;
+    }
+    .features::after, .features::before {
+        height: 30%;
+    }
+
+    .custom-accordion {
+        margin-bottom: 15px;
+        .accordion-head .title {
+            font-size: 18px;
+        }
+        padding: 10px;
+        .title {
+            margin-bottom: 5px;
+        }
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+        .accordion-head {
+            align-items: flex-start;
+        }
+    }
+
+
+
+}
+
+@media(max-width : 575px) {
+    :root {
+
+        // Fonts Size
+        --fontSizeHeading: 20px;
+        --fontSizeSmall: 14px;
+        --fontSizeVerySmall: 12px;
+        --fontSize24: 24px;
+
+
+
+        --fontSizeRegular: 14px;
+        --fontSize18: 16px;
+        --fontSizeMedium: 18px;
+        --fontSizeBig: 20px;
+
+
+        --regularSpace: 15px;
+
+        --bigSpace : 40px;
+
+
+    }
+
+    .custom-btn {
+        min-width: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .floating_btn  {
+        width: 60px;
+        height: 60px;
+        right: 5px;
+    }
+    .contact_icon {
+        width: 60px;
+        height: 60px;
+        img {
+            width: 60%;
+        }
+    }
+
+    .custom-accordion {
+        margin-bottom: 10px;
+        .accordion-head .title {
+            font-size: 16px;
+        }
+        padding: 10px;
+        .title {
+            margin-bottom: 0;
+        }
+        .icon {
+            width: 25px;
+            height: 25px;
+        }
+        .accordion-head {
+            align-items: flex-start;
+        }
+    }
+
+    .custom-nav-tabs {
+        margin-bottom: 15px;
+        gap: 5px;
+      
+    }
+
+    .footer-input-group  {
+        min-height: 2.5rem;
+    }
+    
+
+
+}
+
+
+@media(max-width : 380px) {
+    :root {}
+
+    .custom-btn {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

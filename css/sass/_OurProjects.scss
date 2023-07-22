@@ -1,0 +1,57 @@
+.our_projects {
+    padding: var(--bigSpace) 0;
+    background-color: var(--primaryColor2);
+}
+
+.myTabSwiper {
+ 
+    .swiper-pagination-tabs {
+        bottom: 0;
+        .swiper-pagination-bullet  {
+            width: 15px;
+            height: 15px;
+            background-color: var(--secondColor);
+            &.swiper-pagination-bullet-active {
+            }
+        }
+    }
+    
+}
+
+
+.myChevron {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+
+    .myTabSwiper-next , .myTabSwiper-prev {
+        width: 40px;
+        height: 40px;
+        background-color: var(--secondColor);
+        @include flex();
+        position: relative;
+      
+        &::after {
+            content:  "";
+
+        }
+        svg , i {
+            color: var(--whiteColor);
+            font-size: var(--fontSizeRegular);
+        }
+        .swiper-button-disabled {
+            background-color: #D8D8D8;
+        }
+    }
+    
+}
+.myChevron-small {
+    top: 50%;
+    .myTabSwiper-next , .myTabSwiper-prev {
+        position: absolute;
+    }
+}

@@ -1,0 +1,24 @@
+.top-bar {
+    background-color: var(--whiteColor);
+    padding: 10px 0;
+    .logo {
+
+    }
+    .top-bar-left {
+        .navbar-toggler {
+            border: none;
+            background-color: transparent;
+            svg , i {
+                font-size: var(--fontSizeBig);
+                color: var(--mainColor);
+            }
+        }
+        @include flex();
+        gap: 15px;
+        justify-content: flex-end ;
+
+    }
+ 
+}
+
+
