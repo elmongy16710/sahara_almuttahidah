@@ -64,14 +64,21 @@ $(function () {
         $(".header").css("height", $(window).innerHeight() - topBarHeight);
     });
 
+    /******************************************
+     * ****************************************
+     * Loading Page
+     * ******************************************
+     */
     $(window).on("load", function () {
         $("body").css("overflow-y", "scroll")
         $(".loading").fadeOut(500)
     });
 
-    // wow
-
-
+    /******************************************
+     * ****************************************
+     * WOW Js
+     * ******************************************
+     */
     wow = new WOW({
         boxClass: 'wow', // default
         animateClass: 'animated', // default
@@ -83,18 +90,22 @@ $(function () {
     wow.init();
 
     
+    /******************************************
+     * ****************************************
+     * Window Scroll
+     * ******************************************
+     */
     $(window).on("scroll" , function() {
+        // Scroll to Top Icon
         if($(window).scrollTop() > 300) {
             $(".srcoll-to-top").fadeIn(300).css("display" , "flex");
 
-
-            
         }else {
             $(".srcoll-to-top").fadeOut(300);
             
         }
 
-
+        // Wts Icon Fixed
         if($(window).scrollTop() > $(".category-filter").offset().top) {
             $(".floating_btn").addClass("active_fixed")
         }else {
@@ -104,6 +115,7 @@ $(function () {
         
     });
 
+    // Scroll to Top Icon When Click
     $(".srcoll-to-top").on("click" , function() {
         $("html , body").animate({
             scrollTop : 0
@@ -111,16 +123,17 @@ $(function () {
     })
 
 
-
-
-
-
-
 });
 
 
 
+/******************************************
+     * ****************************************
+     *  Sliders
+     * ******************************************
+*/
 
+// carousel slider Category
 const swiper = new Swiper('.swiper-category', {
     // Optional parameters
     direction: 'horizontal',
@@ -169,9 +182,7 @@ const swiper = new Swiper('.swiper-category', {
 
 });
 
-
-
-
+// carousel slider Customers
 const swiper3 = new Swiper('.ourCustomers-slide', {
     // Optional parameters
     direction: 'horizontal',
@@ -220,6 +231,7 @@ const swiper3 = new Swiper('.ourCustomers-slide', {
 
 });
 
+// carousel slider Projects
 var myTabSwiper = new Swiper(".myTabSwiper", {
     navigation: {
         nextEl: ".myTabSwiper-next",
