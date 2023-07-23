@@ -109,19 +109,21 @@ $(function () {
         // Wts Icon Fixed
         if($(window).scrollTop() > $(".category-filter").offset().top) {
             $(".floating_btn").addClass("active_fixed");
+     
         }else {
             $(".floating_btn").removeClass("active_fixed");
+            
         }
 
         // Fixed Navbar
         // Scroll to Top Icon
-        if($(window).scrollTop() > 200) {
-            $("#main_header_top").addClass("fixed_header");
+        // if($(window).scrollTop() > 200) {
+        //     $("#main_header_top").addClass("fixed_header");
 
-        }else {
-            $("#main_header_top").removeClass("fixed_header");
+        // }else {
+        //     $("#main_header_top").removeClass("fixed_header");
             
-        }
+        // }
 
         
     });
