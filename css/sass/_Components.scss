@@ -2,16 +2,15 @@
 ********************* Variables ****************************************
 ********************************************************************/
 
-
+html {
+    direction: rtl;
+    text-align: right;
+}
 body {
     font-family: var(--fontFamilyMedium), 'CairoRegular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 3000px;
-    direction: var(--rtlDirection);
-    text-align: var(--textRight);
     overflow-y: hidden;
     overflow-x: hidden;
 }
-
 
 
 .custom-btn {
@@ -434,7 +433,7 @@ a {
     position: fixed;
     bottom: 15px;
     left: 15px;
-    z-index: 9999;
+    z-index: 999;
     display: none;
 }
 

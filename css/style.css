@@ -62,11 +62,13 @@
 /*******************************************************************
 ********************* Variables ****************************************
 ********************************************************************/
+html {
+  direction: rtl;
+  text-align: right;
+}
+
 body {
   font-family: var(--fontFamilyMedium), "CairoRegular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 3000px;
-  direction: var(--rtlDirection);
-  text-align: var(--textRight);
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -548,7 +550,7 @@ a {
   position: fixed;
   bottom: 15px;
   left: 15px;
-  z-index: 9999;
+  z-index: 999;
   display: none;
 }
 
@@ -830,11 +832,11 @@ a {
 }
 
 .floating_btn {
-  position: absolute;
-  top: 15px;
+  position: fixed;
+  bottom: 15px;
   right: 15px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,7 +856,7 @@ a {
 .floating_btn.active_fixed {
   position: fixed;
   right: 15px;
-  top: 15px;
+  bottom: 15px;
 }
 
 @-webkit-keyframes pulsing {
@@ -1214,13 +1216,13 @@ div#map {
     width: 100%;
   }
   .floating_btn {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     right: 10px;
   }
   .contact_icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
   }
   .contact_icon img {
     width: 60%;

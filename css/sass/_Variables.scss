@@ -53,6 +53,11 @@ $secondColor: #FFB635;
 $mainColor : #08477D ;
 $whiteColor : #fff ;
 
+$rtlDirection : rtl;
+$ltrDirection : ltr;
+$textRight : right ;
+$textLeft : left ;
+
 
 /*******************************************************************
 ********************* Import Fonts ****************************************
@@ -91,7 +96,7 @@ $whiteColor : #fff ;
     display: flex;
     justify-content: center;
     align-items: center;
-    // @include flex();
+
 }
 
 // Overlay

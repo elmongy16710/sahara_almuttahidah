@@ -1,5 +1,7 @@
 $(function () {
 
+
+
     /******************************************
      * ****************************************
      * accordion
@@ -7,7 +9,6 @@ $(function () {
      */
     $(".accordion-head").on("click", function () {
         let accordionBody = $(this).siblings()[0]
-
 
         // Open accordionBody
         $(accordionBody).slideToggle("fast");
