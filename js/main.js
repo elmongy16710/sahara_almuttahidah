@@ -181,7 +181,7 @@ const swiper = new Swiper('.swiper-category', {
         },
         1024: {
             slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 25,
         },
     },
 
@@ -230,14 +230,14 @@ const swiper3 = new Swiper('.ourCustomers-slide', {
         },
         1024: {
             slidesPerView: 5,
-            spaceBetween: 50,
+            spaceBetween: 15,
         },
     },
 
-    // autoplay: {
-    //     delay: 1500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
 
 
 
@@ -272,8 +272,9 @@ var myTabSwiper = new Swiper(".myTabSwiper", {
         clickable: true,
     },
 
+    autoplay : false
 
-    autoplay: false,
+
 
 
 

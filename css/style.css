@@ -23,7 +23,7 @@
   --fontFamilyRegular: "TajawalRegular";
   --fontFamilyMedium: "TajawalMedium";
   --veryBigSpace: 70px;
-  --bigSpace: 50px;
+  --bigSpace: 70px;
   --mediumSpace: 35px;
   --regularSpace: 25px;
   --smallSpace: 15px;
@@ -905,6 +905,7 @@ a {
           align-items: center;
   margin: auto;
   height: 100%;
+  padding-top: 180px;
 }
 
 .fixed {
@@ -1013,8 +1014,8 @@ a {
 .contact_icon {
   background-color: var(--whiteColor);
   color: #fff;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   font-size: 30px;
   border-radius: 50px;
   text-align: center;
@@ -1425,7 +1426,7 @@ div#map {
     --fontSizeMedium: 18px;
     --fontSizeBig: 20px;
     --regularSpace: 15px;
-    --bigSpace: 40px;
+    --bigSpace: 50px;
   }
   .custom-btn {
     min-width: auto;
