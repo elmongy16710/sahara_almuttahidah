@@ -125,8 +125,13 @@ $(function () {
             
         // }
 
+
         
     });
+
+            // Breadcrumb Height
+            $(".custom_breadcrumb").css("padding-top" , $("#main_header_top").outerHeight() + 30)
+
 
     // Scroll to Top Icon When Click
     $(".srcoll-to-top").on("click" , function() {

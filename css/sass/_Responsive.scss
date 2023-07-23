@@ -26,6 +26,13 @@
             align-items: flex-start;
         }
     }
+
+    .custom_breadcrumb::after  , .custom_breadcrumb::before{
+        background-size: 100%;
+    }
+    .custom_breadcrumb::before {
+        background-position: right top;
+    }
 }
 
 

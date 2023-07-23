@@ -1,23 +1,80 @@
 .custom_breadcrumb {
-    .custom_head {
-        font-size: var(--fontSizeMedium);
+    height: 450px;
+    background-color: var(--mainColor);
+    padding: var(--bigSpace);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .breadcrumb_title {
+        font-size: var(--fontSizeBig);
         color: var(--whiteColor);
         margin-bottom: 20px;
+        font-family: var(--fontFamilyBold);
     }
-    &::after , &::before {
 
-        width: 90%;
-        height: 40%;
+    .breadcrumb-ul {
+    
+
+        .breadcrumb-item {
+            a{
+                color: var(--whiteColor);
+            }
+            color: var(--whiteColor);
+            font-size: var(--fontSizeRegular);
+            &.active {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 2px;
+                    background-color: var(--whiteColor);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 5px;
+                }
+            }
+
+        }
+    }
+
+    &::after,
+    &::before {
+
+        width: 30%;
+        height: 100%;
+        content: "";
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        background-size: 45%;
+    
 
     }
+
     &::after {
         background-image: url("../images/breadcrumb/breadcrumb_left.svg");
-        background-position: right center;
         left: 0;
+        background-position: left bottom;
     }
+
     &::before {
-        background-image: url("../images/breadcrumb/breadcrumb_left.svg");
-        background-position: left center;
+        background-image: url("../images/breadcrumb/breadcrumb_right.svg");
         right: 0;
+        background-position: right bottom;
     }
+}
+
+
+.about_us {
+    padding: var(--bigSpace) 0;
+    .custom-heading {
+        text-align: right;
+    }
+
 }

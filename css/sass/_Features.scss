@@ -3,7 +3,35 @@
     background-color: var(--mainColor);
     position: relative;
 
+    &.features_style_2 {
+        background-color: #EEF7FF;
+        margin-bottom: var(--bigSpace);
+        .custom-head {
+            color: var(--mainColor) !important;
+        }
+        .custom-desc-div {
+            color: var(--mainColor) !important;
+        }
+        .features-item .title {
+            color: var(--mainColor);
+        }
+        &::before {
+            background-image: url("../images/featuresIcons/style2_right.svg");
 
+        }
+    
+        &::after {
+            background-image: url("../images/featuresIcons/style2_left.svg");
+   
+        }
+        &::after , &::before {
+            height: 100%;
+            width: 30%;
+            background-size: 50%;
+    
+        }
+        
+    }
     &::after , &::before {
         content: "";
         position: absolute;
@@ -11,8 +39,6 @@
         width : 25% ;
         background-size: cover;
         height: 80%;
-
-
 
     }
     &::before {
