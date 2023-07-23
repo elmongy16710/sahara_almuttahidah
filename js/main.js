@@ -58,12 +58,12 @@ $(function () {
 
     let allHeight = topBarHeight + navbarHeight;
 
-    $(".header").css("height", $(window).innerHeight() - topBarHeight);
+    // $(".header").css("height", $(window).innerHeight() - topBarHeight);
 
 
-    $(window).resize(function () {
-        $(".header").css("height", $(window).innerHeight() - topBarHeight);
-    });
+    // $(window).resize(function () {
+    //     $(".header").css("height", $(window).innerHeight() - topBarHeight);
+    // });
 
     /******************************************
      * ****************************************
@@ -108,9 +108,19 @@ $(function () {
 
         // Wts Icon Fixed
         if($(window).scrollTop() > $(".category-filter").offset().top) {
-            $(".floating_btn").addClass("active_fixed")
+            $(".floating_btn").addClass("active_fixed");
         }else {
-            $(".floating_btn").removeClass("active_fixed")
+            $(".floating_btn").removeClass("active_fixed");
+        }
+
+        // Fixed Navbar
+        // Scroll to Top Icon
+        if($(window).scrollTop() > 200) {
+            $("#main_header_top").addClass("fixed_header");
+
+        }else {
+            $("#main_header_top").removeClass("fixed_header");
+            
         }
 
         

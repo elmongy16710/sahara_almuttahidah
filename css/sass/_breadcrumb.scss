@@ -1,0 +1,23 @@
+.custom_breadcrumb {
+    .custom_head {
+        font-size: var(--fontSizeMedium);
+        color: var(--whiteColor);
+        margin-bottom: 20px;
+    }
+    &::after , &::before {
+
+        width: 90%;
+        height: 40%;
+
+    }
+    &::after {
+        background-image: url("../images/breadcrumb/breadcrumb_left.svg");
+        background-position: right center;
+        left: 0;
+    }
+    &::before {
+        background-image: url("../images/breadcrumb/breadcrumb_left.svg");
+        background-position: left center;
+        right: 0;
+    }
+}

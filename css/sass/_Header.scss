@@ -1,5 +1,27 @@
+
+#main_header_top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+
+
+    &.fixed_header {
+        position: fixed;
+        top : 0;
+        right: 0;
+        width: 100%;
+        z-index: 999;
+        .custom-navbar {
+            background-color: rgba($mainColor, 0.9);
+        }
+    }
+
+}
+
 .header {
-    height: calc(100vh - 115px);
+    height: calc(100vh);
     background-image: url("../images/header.svg");
     position: relative;
     background-repeat: no-repeat;
